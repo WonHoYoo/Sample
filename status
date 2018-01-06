@@ -1,0 +1,8 @@
+#
+clear
+echo -n "It is currently: ";date
+echo -n "I am logged on as ";whoami
+echo -n "This computer is called ";hostname
+echo -n "I am currently in the directory ";pwd
+echo -n "The number of people currently logged on is:"
+who | wc -l 

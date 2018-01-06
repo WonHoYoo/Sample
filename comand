@@ -1,0 +1,18 @@
+#!/bin/csh
+
+echo "There are `wc -l $1` lines in file $1"
+
+if ({grep -s junk $1}) then
+	echo "We found junk in file $1"
+endif
+
+
+foreach i (*)
+if (-f $i) then
+echo "$i"
+head $i
+endif
+if(-d $i) then
+(cd $i; headers)
+endif
+end

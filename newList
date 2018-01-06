@@ -1,0 +1,26 @@
+#!/bin/csh
+
+set name = (mark sally kethy tony)
+
+echo $#name
+
+echo $name[1]
+echo $name[4]
+echo $name[2-3]
+echo $name[2-]
+echo $name[1-3]
+echo $name[$i]
+
+set name = ($name[1-2] alfie $name[3-])
+
+@ k = 2
+@ j = 4
+
+set name = ($name[1-$k] $name[$j-])
+
+#remove the first element on the list name
+shift name 
+
+while ($#argv > 0)
+	grep $something $argv[1]
+end

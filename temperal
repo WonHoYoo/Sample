@@ -1,0 +1,16 @@
+#!/bin/csh
+
+set x = mark
+set y = $<
+echo $x, $y
+
+if($x == $y) then
+echo "They are the same"
+endif
+
+@ x = 5
+@ y = $<
+echo $x,$y
+if ($x == $y) then
+echo "They are same"
+endif

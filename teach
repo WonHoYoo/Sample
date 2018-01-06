@@ -1,0 +1,12 @@
+#!/bin/csh
+
+foreach i ($*)
+	grep -i unix $i
+end
+
+$* : all the parameter
+$#argv : the number of parameters
+#declare a number
+@ i = 2
+echo $i
+@ i++

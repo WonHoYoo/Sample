@@ -1,0 +1,8 @@
+#!/bin/csh
+
+set sentence = Hi
+set sentence = "$sentence there everybody"
+
+echo "Hi there wourld"
+echo -n "Please type in your name: "
+echo "The current directory is " $cwd

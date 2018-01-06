@@ -1,0 +1,16 @@
+#!/bin/csh
+
+set name = Mark
+echo "This is" $name
+if( $name == Mark ) then
+
+endif
+
+set name = "Mark Meyer"
+echo $name
+set dirname=/usr/local/doc/HELP
+ls $dirname
+
+if ($?dirname) then
+echo $dirname
+endif
